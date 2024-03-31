@@ -6,7 +6,7 @@ interface LabelProps extends LabelHTMLAttributes<HTMLLabelElement> {
 
 export const Label = ({ children, ...props }: LabelProps) => {
   return (
-    <label className="flex flex-col justify-end" {...props}>
+    <label className="flex flex-col justify-end max-sm:text-sm" {...props}>
       {children}
     </label>
   );

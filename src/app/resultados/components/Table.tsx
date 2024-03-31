@@ -2,13 +2,13 @@ import { calculation } from "../utils/calculation";
 
 export const Table = ({ params }: { params: URLSearchParams }) => {
   const classThead = "font-normal p-5 text-left";
-  const classItems = "p-5";
+  const classItems = "p-5 max-md:min-w-36";
   const classBorder = "border-b-1 border-b-lines";
 
   const result = calculation(Object.fromEntries(params));
 
   return (
-    <table className="w-full border-collapse rounded bg-white">
+    <table className="w-full">
       <thead className={classBorder}>
         <tr className={classBorder}>
           <th className={classThead}>Evento</th>
