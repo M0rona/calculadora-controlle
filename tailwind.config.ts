@@ -8,11 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        'gentleSky': '#EEF2F8',
+        'graphite': '#32323E',
+        'primary-blue': '#3133FF',
+        'lines': '#CECED8'
       },
+
+      fontSize: {
+        'h1': '2.375rem',
+        'h2': '1.063rem',
+        'h1-medium': '1.375rem'
+      },
+
+      borderWidth: {
+        1: '1px'
+      }
     },
   },
   plugins: [],
