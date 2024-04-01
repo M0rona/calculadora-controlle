@@ -14,8 +14,10 @@ export const Form = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    // Coleta os dados do formulario e transforma em um objeto
     const data = Object.fromEntries(new FormData(e.target as HTMLFormElement));
 
+    //traz o objeto completo para a rota
     router.push(
       `/resultados?${new URLSearchParams(data as { [k: string]: string })}`,
     );

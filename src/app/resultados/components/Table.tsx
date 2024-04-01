@@ -13,7 +13,7 @@ export const Table = ({ params }: { params: URLSearchParams }) => {
       <thead className={classBorder}>
         <tr className={classBorder}>
           <th className={`${classThead} text-left`}>Evento</th>
-          <th className={`${classThead} text-center`}>Ref.</th>
+          <th className={`${classThead} text-center`}>Ref. </th>
           <th className={`${classThead} text-center`}>Proventos</th>
           <th className={`${classThead} text-center`}>Descontos</th>
         </tr>
