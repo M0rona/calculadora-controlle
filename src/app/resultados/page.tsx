@@ -1,11 +1,20 @@
 "use client";
 
+import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
 import { ItemsCalc } from "./components/ItemsCalc";
 import { Table } from "./components/Table";
 
 export default function Resultados() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <MainContent />
+    </Suspense>
+  );
+}
+
+function MainContent() {
   const params = useSearchParams();
 
   return (
